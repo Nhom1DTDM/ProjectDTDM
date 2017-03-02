@@ -15,5 +15,11 @@ Select a file to upload: <br />
 <br />
 <input type="submit" value="Upload File" />
 </form>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+<div class="g-savetodrive"
+   data-src="//example.com/path/to/myfile.pdf"
+   data-filename="Upload File"
+   data-sitename="multipart/form-data">
+</div>
 </body>
 </html>
