@@ -13,7 +13,11 @@ Select a file to upload: <br />
                         enctype="multipart/form-data">
 <input type="file" name="file" size="50" />
 <br />
-<input type="submit" value="Upload File" />
+<input type="submit" value="Upload File" 
+           onclick="this.value='Uploading..';
+                    google.script.run.withSuccessHandler(fileUploaded)
+                    .uploadFiles(this.parentNode);
+                    return false;">
 </form>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 <div class="g-savetodrive"
